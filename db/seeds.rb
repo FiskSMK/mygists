@@ -286,7 +286,7 @@ _start:
       ld a,0           ; load the value 0 to register a, the ''accumulator''
       ld ($844C),a    ; assign the contents of register a to memory address (CURCOL) in the RAM
       ld ($844B),a    ; assign the contents of register a to memory address (CURROW) in the RAM
-      ld hl,text       ; load the data in label "text" to register hl
+      ld hl,text       ; load the data in label \"text\" to register hl
       rst $28
      .dw $450A    ; calls a function in ti83plus.inc to print text
       rst $28
