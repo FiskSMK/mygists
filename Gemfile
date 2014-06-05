@@ -42,8 +42,8 @@ gem 'pygments.rb'
 gem 'redcarpet'
 gem 'quiet_assets'
 
-gem 'will_paginate-bootstrap'
-# gem 'betterlorem', '~> 0.1.2'
+gem 'will_paginate', '~> 3.0.5'
+gem 'betterlorem', '~> 0.1.2'
 gem 'bootstrap-sass', '~> 3.0.3.0'
 gem 'bootstrap-will_paginate', '~> 0.0.10'
 
