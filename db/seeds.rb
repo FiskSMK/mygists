@@ -7,23 +7,23 @@ int main(void)
 {
     printf(\"Hello, world!\n\");
     return 0;
-}", "C", "helloworld.c"]
+}", "C", "helloworld.c"],
 ["begin
   writeln('Hello world!');
-end.", "Pascal", "helloworld.pas"]
+end.", "Pascal", "helloworld.pas"],
 ["<?php
 print('Hello world!');
-?>", "PHP", "helloworld.php"]
+?>", "PHP", "helloworld.php"],
 ["<script type=\text/javascript\">
 alert('Hello world!')
-</script>", "Javascript", "helloworld.js"]
+</script>", "Javascript", "helloworld.js"],
 ["public class HelloWorld {
     public static void main(String [] args) {
         System.out.println(\"Hello World!\");
     }
-}", "Java", "helloworld.java"]
-["alert(\"Hello World!\");", "Javascript", "helloworld.js"]
-["puts \"Hello World!\"", "Ruby", "helloworld.rb"]
+}", "Java", "helloworld.java"],
+["alert(\"Hello World!\");", "Javascript", "helloworld.js"],
+["puts \"Hello World!\"", "Ruby", "helloworld.rb"],
 ["%TITLE \"HELLO.COM\"
 ; 16-bit Com file.
 ; Written in TASM assembly.
@@ -71,10 +71,10 @@ Done:
 End Start
 End PRINT_MSG
 End Done
-.End", "Assembler", "hello.asm"]
+.End", "Assembler", "hello.asm"],
 ["REPORT ZHELLOWORLD.
-WRITE 'Hello, world!'.", "ABAP", "?"]
-["trace (\"Hello, world!\");", "ActionScript 3.0", "hello.as"]
+WRITE 'Hello, world!'.", "ABAP", "?"],
+["trace (\"Hello, world!\");", "ActionScript 3.0", "hello.as"],
 ["package com.example
 {
     import flash.text.TextField;
@@ -89,38 +89,38 @@ WRITE 'Hello, world!'.", "ABAP", "?"]
             addChild(txtHello);
         }
     }
-}", "ActionScript 3.0", "hello.as"]
+}", "ActionScript 3.0", "hello.as"],
 ["with Ada.Text_IO;
  
 procedure Hello_World is
  use Ada.Text_IO;
 begin
     Put_Line(\"Hello, world!\");
-end;", "Ada", "hello.ads"]
-["Display(\"Hello, world!\");", "Adventure Game Studio Script", "??"]
+end;", "Ada", "hello.ads"],
+["Display(\"Hello, world!\");", "Adventure Game Studio Script", "??"],
 ["DrawingSurface *surface = Room.GetDrawingSurfaceForBackground();
 surface.DrawString(0, 100, Game.NormalFont, \"Hello, world!\");
-surface.Release();\");", "Adventure Game Studio Script", "??"]
+surface.Release();\");", "Adventure Game Studio Script", "??"],
 ["BEGIN
    DISPLAY (\"Hello, world!\");
-END.", "ALGOL", ""]
-["print(\"Hello, world!\")", "ALGOL 68", ""]
+END.", "ALGOL", ""],
+["print(\"Hello, world!\")", "ALGOL 68", ""],
 ["PROC main()
    WriteF('Hello, world!')
-ENDPROC", "Amiga E", ""]
-["'Hello, world!'", "APL", ""]
-["display dialog \"Hello, world!\"", "AppleScript", "hello.scpt"]
+ENDPROC", "Amiga E", ""],
+["'Hello, world!'", "APL", ""],
+["display dialog \"Hello, world!\"", "AppleScript", "hello.scpt"],
 ["on helloWorld()
   display dialog \"Hello, world!\"
 end helloWorld
  
-helloWorld()", "AppleScript", "hello.scpt"]
+helloWorld()", "AppleScript", "hello.scpt"],
 ["; Uses S-C Assembler variant.
 ; .or is origin
 ; .as is ASCII String
 ; .hs is Hex String
         .or $300
-main    ldy #$00
+main    ldy \#$00
 .1      lda str,y
         beq .2
         jsr $fded ; ROM routine, COUT, y is preserved
@@ -128,8 +128,8 @@ main    ldy #$00
         bne .1
 .2      rts
 str     .as \"HELLO WORLD\"
-        .hs 0D00", "Assembly language — MOS Technology 6502, Apple II (II+, IIe, IIC)", "hello.asm"]
-["100 REM Hello World using a mix of BBC Basic and 6502 assembler 
+        .hs 0D00", "Assembly language — MOS Technology 6502, Apple II (II+, IIe, IIC)", "hello.asm"],
+["100 REM Hello World using a mix of BBC Basic and 6502 assembler
 110 $&A200 = \"!dlrow olleH\"
 115 code% = &A100
 120 str = &A200
@@ -150,7 +150,7 @@ str     .as \"HELLO WORLD\"
 270 RTS
 280 ]
 290 NEXT
-300 CALL code%", "Assembly language — MOS Technology 6502, Acorn MOS", "hello.asm"]
+300 CALL code%", "Assembly language — MOS Technology 6502, Acorn MOS", "hello.asm"],
 ["1000 REM Hello World using a mix of BBC Basic and ARM assembler 
 1010 DIM org 100
 1020 OS_Write0 = &2
@@ -170,11 +170,11 @@ str     .as \"HELLO WORLD\"
 2070 EQUS   \"Hello, World!\" + CHR$(0)
 2080 ALIGN
 2090 ]
-2100 ENDPROC", "Assembly language — ARM, BBC BASIC inline assembler", "hello.asm"]
+2100 ENDPROC", "Assembly language — ARM, BBC BASIC inline assembler", "hello.asm"],
 [" A_CR  = $0D              ;carriage return
  BSOUT = $FFD2            ;kernel ROM sub, write to current output device
  ;
-         LDX #$00         ;starting index in .X register
+         LDX \#$00         ;starting index in .X register
  ; 
  LOOP    LDA MSG,X        ;read message text
          BEQ LOOPEND      ;end of text
@@ -185,7 +185,7 @@ str     .as \"HELLO WORLD\"
  ;
  LOOPEND RTS              ;return from subroutine
  ;
- MSG     .BYT 'Hello, world!',A_CR,$00", "Assembly language — MOS Technology 6502, CBM KERNAL", "hello.asm"]
+ MSG     .BYT 'Hello, world!',A_CR,$00", "Assembly language — MOS Technology 6502, CBM KERNAL", "hello.asm"],
 ["; The output file is 22 bytes.
 ; 14 bytes are taken by \"Hello, world!$
 ;
@@ -213,7 +213,7 @@ main  proc
 hello_message db 'Hello, world!$'
  
 main  endp
-end   main", "Assembly language — DOS x86", "hello.asm"]
+end   main", "Assembly language — DOS x86", "hello.asm"],
 ["; This program displays \"Hello, World!\" in a windows messagebox and then quits.
 ;
 ; Written by Stewart Moss - May 2006
@@ -247,7 +247,7 @@ Start:
          push 0
          call ExitProcess
 ends
-end Start", "Assembly language — x86 Windows", "hello.asm"]
+end Start", "Assembly language — x86 Windows", "hello.asm"],
 ["	.section	.rodata
 string:
 	.ascii \"Hello, world!\n\"
@@ -264,7 +264,7 @@ _start:
 	int $0x80 		#Call Operating System
 	movq %rax, %rbx		#Make program return syscall exit status
 	movq $1, %rax		#1=exit
-	int $0x80		#Call System Again", "Assembly language — x86-64 Linux, AT&T syntax", "hello.asm"]
+	int $0x80		#Call System Again", "Assembly language — x86-64 Linux, AT&T syntax", "hello.asm"],
 ["CR      EQU  $0D          ; carriage return
  PROUT   EQU  $xxxx        ; character output routine
  ;
@@ -277,7 +277,7 @@ _start:
          INC  HL            ; point to next char
          JR   PRLOOP        ; repeat
  ;
- MSG     DB   \"Hello, world!\",CR,0", "Assembly language — Z80", "hello.asm"]
+ MSG     DB   \"Hello, world!\",CR,0", "Assembly language — Z80", "hello.asm"],
 [".NOLIST
 #include \"ti83plus.inc\"
 .LIST
@@ -295,15 +295,15 @@ _start:
 text:
       .db \"Hello, World\",0
 .end
-end", "Assembly language — Z80", "hello.asm"]
+end", "Assembly language — Z80", "hello.asm"],
 ["219F9D
 EF0A45
 EF2E45
 C9
-48692100", "Assembly language — Z80", "hello.asm"]
-["Msgbox, Hello, world!", "AutoHotkey", ""]
-["Traytip,, Hello, world!", "AutoHotkey", ""]
-["Msgbox(64, "", \"Hello, world!\")", "AutoIt", ""]
+48692100", "Assembly language — Z80", "hello.asm"],
+["Msgbox, Hello, world!", "AutoHotkey", ""],
+["Traytip,, Hello, world!", "AutoHotkey", ""],
+["Msgbox(64, "", \"Hello, world!\")", "AutoIt", ""],
 ["BEGIN { print \"Hello, world!\" }", "AWK", "hello.awk"]
 ]
 

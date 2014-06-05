@@ -6,7 +6,7 @@
 <p>
   <strong>Snippet:</strong>
 </p>
-<%= raw Pygments.highlight(@gist.snippet, lexer: @gist.lang) %>
+<%= raw Pygments.highlight(@gist.snippet, lexer: (@gist.lang).downcase) %>
 <p>
   <strong>Description:</strong>
   <%= @gist.description %>
