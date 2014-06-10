@@ -4,7 +4,7 @@
 gem 'rails', '4.0.4'
 
 # Use Uglifier as compressor for JavaScript assets
-gem 'uglifier', '>= 1.3.0'
+# gem 'uglifier', '>= 1.3.0'
 
 # Use CoffeeScript for .js.coffee assets and views
 gem 'coffee-rails', '~> 4.0.0'
@@ -42,10 +42,10 @@ gem 'pygments.rb'
 gem 'redcarpet'
 gem 'quiet_assets'
 
-gem 'will_paginate-bootstrap'
+# gem 'will_paginate-bootstrap'
 # gem 'betterlorem', '~> 0.1.2'
-gem 'bootstrap-sass', '~> 3.0.3.0'
-gem 'bootstrap-will_paginate', '~> 0.0.10'
+# gem 'bootstrap-sass', '~> 3.0.3.0'
+# gem 'bootstrap-will_paginate', '~> 0.0.10'
 
 group :production do
   gem 'pg'
@@ -54,6 +54,7 @@ end
 
 gem 'sqlite3', group: [:development, :test]
 
-gem 'sass-rails'
+# gem 'sass-rails'
 
 gem 'dotenv-rails', :groups => [:development, :test]
+gem 'kaminari'

@@ -1,34 +1,18 @@
 <h1>Listing gists</h1>
+<%= link_to 'New Gist', new_gist_path %>
+<form class="navbar-form navbar-left pull-right" role="search" action="/gists/search">
+  <div class="form-group">
 
-<table>
-  <thead>
-    <tr>
-      <th>Snippet</th>
-      <th>Lang</th>
-      <th>Description</th>
-      <th></th>
-      <th></th>
-      <th></th>
-    </tr>
-  </thead>
-
-  <tbody>
-    <% @gists.each do |gist| %>
-      <tr>
-
-
-        <td><pre><%= gist.snippet %></pre></td>
-        <!--<td><pre><%= begin raw Pygments.highlight(gist.snippet, lexer: (gist.lang).downcase) rescue gist.snippet end %></pre></td>-->
-        <td><%= gist.lang %></td>
-        <td><%= gist.description %></td>
-        <td><%= link_to 'Show', gist %></td>
-        <td><%= link_to 'Edit', edit_gist_path(gist) %></td>
-        <td><%= link_to 'Destroy', gist, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-      </tr>
-    <% end %>
-  </tbody>
-</table>
+    <%= select_tag(:lang, options_for_select(Pygments.lexers.keys.sort.map! {|l| l.downcase.strip}, params[:lang]))%>
+  </div>
+  <button type="submit" class="btn btn-default">Search</button>
+</form>
+<br>
+<tbody class="page">
+    <%= render @gists %>
+</tbody>
 
 <br>
 
 <%= link_to 'New Gist', new_gist_path %>
+<%= paginate @gists %>

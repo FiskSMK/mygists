@@ -1,0 +1,7 @@
+<tr class="gist">
+  Snippet: <%= gist.description %> - <%= gist.lang %>
+  <%= link_to 'Show', gist %>
+  <%= link_to 'Edit', edit_gist_path(gist) %>
+  <%= link_to 'Destroy', gist, method: :delete, data: { confirm: 'Are you sure?' } %>
+  <pre><%= gist.snippet %></pre>
+</tr>
